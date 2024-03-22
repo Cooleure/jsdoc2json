@@ -68,7 +68,7 @@ def process_folder(folder_path, output_path, debug):
     except Exception as e:
         print(f"Error processing folder '{folder_path}': {e}")
 
-def main():
+def convert():
     # Argument parsing
     parser = argparse.ArgumentParser(description='JSdoc to JSON converter for GML files.')
 
@@ -89,6 +89,9 @@ def main():
         process_folder(args.folder_path, args.output_path, args.debug)
 
     print("End of conversion.\n")
+
+def main():
+    convert()
 
 if __name__ == "__main__":
     main()

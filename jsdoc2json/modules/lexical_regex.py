@@ -11,7 +11,7 @@ TAG_RETURN      = re.compile(r'@(returns|return)')
 TYPE_BEGIN      = re.compile(r'{')
 TYPE_END        = re.compile(r'}')
 NEW_LINE        = re.compile(r'\*')
-WORD = re.compile(r"[\w']+|\.")
+WORD            = re.compile(r"[\w']+|\.")
 
 JSDOC = re.compile(
     JSDOC_BEGIN.pattern     + '|' +
