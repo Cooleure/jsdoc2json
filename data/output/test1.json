@@ -1,0 +1,28 @@
+{
+    "jsdoc": [
+        {
+            "function_tag": {
+                "description": "sum a b"
+            },
+            "description_tag": {
+                "description": "This function calculate the sum of two numbers . You can can add other sentences if you need ."
+            },
+            "param_tags": [
+                {
+                    "name": "a",
+                    "type": "int",
+                    "description": "The first number"
+                },
+                {
+                    "name": "b",
+                    "type": "int . chose",
+                    "description": "The second number"
+                }
+            ],
+            "return_tag": {
+                "type": "int",
+                "description": "The sum of a and b"
+            }
+        }
+    ]
+}

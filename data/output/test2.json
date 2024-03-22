@@ -1,0 +1,48 @@
+{
+    "jsdoc": [
+        {
+            "function_tag": {
+                "description": "calculerSomme"
+            },
+            "description_tag": null,
+            "param_tags": [
+                {
+                    "name": "a",
+                    "type": "number",
+                    "description": "Le premier nombre à additionner ."
+                },
+                {
+                    "name": "b",
+                    "type": "number",
+                    "description": "Le deuxième nombre à additionner ."
+                }
+            ],
+            "return_tag": {
+                "type": "number",
+                "description": "La somme des deux nombres . c'est le return"
+            }
+        },
+        {
+            "function_tag": {
+                "description": "calculerDifférence"
+            },
+            "description_tag": null,
+            "param_tags": [
+                {
+                    "name": "c",
+                    "type": "number",
+                    "description": "Le premier nombre à soustrainre ."
+                },
+                {
+                    "name": "d",
+                    "type": "number",
+                    "description": "Le deuxième nombre à soustraire ."
+                }
+            ],
+            "return_tag": {
+                "type": "number",
+                "description": "La différence des deux nombres ."
+            }
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "jsdoc": [
+        {
+            "function_tag": {
+                "description": "player_move"
+            },
+            "description_tag": {
+                "description": "Move the player in the given direction"
+            },
+            "param_tags": [
+                {
+                    "name": "a",
+                    "type": "Real",
+                    "description": "The speed of the player"
+                },
+                {
+                    "name": "b",
+                    "type": "Real",
+                    "description": "The direction of the player"
+                }
+            ],
+            "return_tag": {
+                "type": "Array Real",
+                "description": "The new coordinates"
+            }
+        }
+    ]
+}
