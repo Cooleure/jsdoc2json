@@ -21,10 +21,18 @@ pip install jsdoc2json
 
 ## Usage
 
-Usage:
+Command-line usage:
 
 ```bash
-python -m jsdoc2json (-file FILE_PATH | -folder FOLDER_PATH) -output OUTPUT_PATH [-debug]
+jsdoc2json (-file FILE_PATH | -folder FOLDER_PATH) -output OUTPUT_PATH [-debug]
+```
+
+Code usage:
+
+```python
+import jsdoc2json
+
+jsdoc2json.convert(file_or_folder_path, output_path, debug)
 ```
 
 ## Example
@@ -34,7 +42,7 @@ python -m jsdoc2json (-file FILE_PATH | -folder FOLDER_PATH) -output OUTPUT_PATH
 To convert a single GML file "Player.gml" and save it as "Player.json":
 
 ```bash
-python -m jsdoc2json -file Player.gml -output ./documentation_folder
+jsdoc2json -file Player.gml -output ./documentation_folder
 ```
 
 **Input: `Player.gml`**
@@ -92,7 +100,7 @@ function player_move(speed, direction) {
 To convert all GML files within a Game Maker project "My_project":
 
 ```bash
-python -m jsdoc2json -folder ./My_project -output ./documentation_folder
+jsdoc2json -folder ./My_project -output ./documentation_folder
 ```
 
 ## Project Structure
