@@ -130,7 +130,7 @@ jsdoc2json/
 
 ### Reporting Bugs
 
-If you encounter a bug, please open an issue on our [issue tracker](https://github.com/votre-nom-utilisateur/nom-du-projet/issues) and provide detailed information about the bug, including how to reproduce it.
+If you encounter a bug, please open an issue on our [issue tracker](https://github.com/Cooleure/jsdoc2json/issues) and provide detailed information about the bug, including how to reproduce it.
 
 ## License
 

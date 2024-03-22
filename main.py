@@ -2,8 +2,7 @@ import argparse
 import json
 import os
 from colorama import init, Fore, Style
-from modules import lexical_parser
-from modules import syntax_parser
+from modules import lexical_parser, syntax_parser
 
 def process_file(file_path, output_path, debug):
     try:
@@ -21,10 +20,9 @@ def process_file(file_path, output_path, debug):
             
             # LEXICAL ANALYSIS
             lexical_parsing = lexical_parser.analysis(content)
-            #print(lexical_parsing)
 
             if lexical_parsing:
-                print(f"\t{Fore.GREEN}Lexical analysis done succesfully.{Style.RESET_ALL}")
+                print(f"\t{Fore.GREEN}Lexical analysis done successfully.{Style.RESET_ALL}")
             else:
                 print(f"\t{Fore.YELLOW}No JSDoc found in the file.{Style.RESET_ALL}\n")
                 return
@@ -32,7 +30,7 @@ def process_file(file_path, output_path, debug):
             # SYNTAXIC ANALYSIS
             try:
                 document_data = syntax_parser.analysis(lexical_parsing)
-                print(f"\t{Fore.GREEN}Syntax analysis done succesfully.{Style.RESET_ALL}")
+                print(f"\t{Fore.GREEN}Syntax analysis done successfully.{Style.RESET_ALL}")
 
                 if debug:
                     print(repr(document_data))
@@ -48,7 +46,6 @@ def process_file(file_path, output_path, debug):
             except lexical_parser.WrongTokenError as e:
                 print(f"\t{Fore.RED}{e}{Style.RESET_ALL}")
 
-            #print(syntax_parsing)
             print()
 
     except FileNotFoundError:

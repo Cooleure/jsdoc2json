@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+MANIFEST.in
+setup.py
+__init__.py
+.gitattributes
