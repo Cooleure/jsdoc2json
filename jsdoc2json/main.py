@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 from colorama import init, Fore, Style
-from modules import lexical_parser, syntax_parser
+from .modules import lexical_parser, syntax_parser
 
 def process_file(file_path, output_path, debug):
     try:
@@ -68,7 +68,19 @@ def process_folder(folder_path, output_path, debug):
     except Exception as e:
         print(f"Error processing folder '{folder_path}': {e}")
 
-def convert():
+def convert(file_or_folder_path, output_path, debug=False):
+    if os.path.isfile(file_or_folder_path):
+        print("\nFile conversion begins...\n")
+        process_file(file_or_folder_path, output_path, debug)
+    elif os.path.isdir(file_or_folder_path):
+        print("\nFile conversion begins...\n")
+        process_folder(file_or_folder_path, output_path, debug)
+    else:
+        print(f"File or folder '{file_or_folder_path}' not found.")
+
+    print("End of conversion.\n")
+
+def convert_command_line():
     # Argument parsing
     parser = argparse.ArgumentParser(description='JSdoc to JSON converter for GML files.')
 
@@ -91,7 +103,7 @@ def convert():
     print("End of conversion.\n")
 
 def main():
-    convert()
+    convert_command_line()
 
 if __name__ == "__main__":
     main()
